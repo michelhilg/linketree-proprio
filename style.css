@@ -1,3 +1,26 @@
+/* ─── LIGA DA IA · MODO ESCURO ───────────────────────────── */
+:root {
+  color-scheme: dark;
+  --liga-page: #121212;
+  --liga-panel: #1C1C1C;
+  --liga-text: #EDEDED;
+  --liga-muted: color-mix(in srgb, #EDEDED 76%, #121212);
+  --liga-divider: color-mix(in srgb, #EDEDED 18%, #121212);
+  --liga-jade: #1DBF85;
+  --liga-selection: #173329;
+  --liga-panel-soft: #19211E;
+  --liga-panel-feature: #10291F;
+}
+
+::selection {
+  background: var(--liga-jade);
+  color: #0B3B30;
+}
+
+* {
+  font-style: normal;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -20,16 +43,16 @@ body {
 
 /* ─── COMPLEX BACKGROUNDS & ANIMATIONS ───────────────────── */
 .bg-cosmic {
-  background-image: radial-gradient(circle at top right, rgba(181, 242, 219, 0.05), transparent 40%),
-    radial-gradient(circle at bottom left, rgba(22, 35, 43, 0.8), transparent 60%);
+  background-image: radial-gradient(circle at top right, rgba(29, 191, 133, 0.06), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(16, 41, 31, 0.7), transparent 60%);
 }
 
-.glow-mint {
+.glow-jade {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: #B5F2DB;
-  opacity: 0.1;
+  background: #1DBF85;
+  opacity: 0.08;
   filter: blur(100px);
   border-radius: 50%;
   pointer-events: none;
@@ -39,17 +62,17 @@ body {
 @keyframes pulse-dot {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(181, 242, 219, 0.7);
+    box-shadow: 0 0 0 0 rgba(29, 191, 133, 0.7);
   }
 
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 6px rgba(181, 242, 219, 0);
+    box-shadow: 0 0 0 6px rgba(29, 191, 133, 0);
   }
 
   100% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(181, 242, 219, 0);
+    box-shadow: 0 0 0 0 rgba(29, 191, 133, 0);
   }
 }
 

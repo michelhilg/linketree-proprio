@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     words.forEach((word, index) => {
       const span = document.createElement('span');
       // Classe base + inicia como entering se não for a primeira
-      const baseClass = 'animated-word font-serif italic font-normal text-zait-mint tracking-normal ';
+      const baseClass = 'animated-word font-normal text-liga-jade tracking-normal ';
       span.className = baseClass + (index === 0 ? 'word-active' : 'word-entering');
       span.textContent = word;
       textContainer.appendChild(span);
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       phoneInput.classList.remove('error');
       phoneError.classList.remove('visible');
-      phoneInput.style.borderColor = 'var(--zait-mint)';
+      phoneInput.style.borderColor = 'var(--liga-jade)';
     }
 
     // Feedback visual de carregamento
@@ -234,9 +234,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const material = new THREE.PointsMaterial({
       size: 5, // Tamanho base ajustado
-      color: 0xB5F2DB, // Cor Zait Mint
+      color: 0x1DBF85, // Jade (Liga da IA)
       transparent: true,
-      opacity: 0.5,
+      opacity: 0.35,
       sizeAttenuation: true,
     });
 
