@@ -1,0 +1,9 @@
+# Publish only the site's public files from the repository root.
+*
+!/index.html
+!/style.css
+!/script.js
+!/fotos/
+!/fotos/logo_simbol.png
+!/fotos/michel.jpg
+!/fotos/michel.png

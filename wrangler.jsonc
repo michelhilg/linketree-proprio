@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "linketree-proprio",
+  "account_id": "f1d394d97d1bd93a5ef35e22d72828b0",
+  "compatibility_date": "2026-11-10",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "michel.ligadaia.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "."
+  },
+  "observability": {
+    "enabled": true,
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  }
+}
